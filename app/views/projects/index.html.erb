@@ -2,6 +2,10 @@
 
 <ul>
 	<% @projects.each do |project| %>
-	<li> <%= project  %></li>
+	<li> 
+		<%= project.name  %> | 
+		<%= project.description %> | 
+		<%= number_to_currency(project.target_pledge_amount) %>
+	</li>
 	<% end %>
 </ul>
