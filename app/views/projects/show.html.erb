@@ -1,0 +1,17 @@
+	<article>
+		<header>
+			<h2><%= @project.name %></h2>
+		</header>
+			<p>
+				Description: <%= @project.description %>
+			</p>
+				<p>
+					Target Raise: <%= @project.target_pledge_amount %>
+				</p>
+				<p>
+					Website: <%= @project.website %>
+				</p>
+				<p>
+					Funding Ends: <%= wording(@project) %>
+				</p>
+	</article>
