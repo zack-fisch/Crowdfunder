@@ -1,11 +1,20 @@
 <h1><%= @projects.length %> Projects</h1>
 
-<ul>
+
 	<% @projects.each do |project| %>
-	<li> 
-		<%= project.name  %> | 
-		<%= project.description %> | 
+	<h3>
+		<%= project.name  %>
+	</h3>  
+	<p>
+		<%= project.description %> 
+	</p>
+	<p>
 		<%= number_to_currency(project.target_pledge_amount) %>
-	</li>
-	<% end %>
-</ul>
+	</p>
+	<p>
+		<%= project.website %> 
+	</p>
+	<p>
+		Funding Ends: <%= project.pledging_ends_on %>
+	</p>
+<% end %>
