@@ -10,4 +10,8 @@ class ProjectsController < ApplicationController
 	rescue ActiveRecord::RecordNotFound
 		redirect_to :action => 'index'
 	end
+
+	def edit
+		@project = Project.find(params[:id])
+	end
 end
