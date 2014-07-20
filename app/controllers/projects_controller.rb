@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
 	def index
-		@projects = Project.all
+		@projects = Project.accepting
 	end
 
 	def show
@@ -36,6 +36,7 @@ class ProjectsController < ApplicationController
 		@project.destroy
 		redirect_to	projects_path
 	end
+
 
 	private
 
