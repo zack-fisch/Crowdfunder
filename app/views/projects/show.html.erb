@@ -14,6 +14,10 @@
 				<p>
 					Funding Ends: <%= wording(@project) %>
 				</p>
+
+				<p>
+					<%= image(@project) %>
+				</p>
 	</article>
 <%= link_to 'Back to Projects', projects_path %> | 
 <%= link_to 'Edit', edit_project_path(@project) %> | 
