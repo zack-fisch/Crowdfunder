@@ -2,27 +2,37 @@
 
 <%= form_for(@project) do |f| %>
 	<p>
-		<%= f.label :name %>:
+		<%= f.label :name %>
+	</p>
+	<p>
 		<%= f.text_field :name, size: 30 %>
 	</p>
 
 	<p>
-		<%= f.label :description %>:
+		<%= f.label :description %>
+	</p>
+	<p>
 		<%= f.text_area :description, cols: 40, rows: 7 %>
 	</p>
 
 	<p>
-		<%= f.label :target_pledge_amount %>:
+		<%= f.label :target_pledge_amount %>
+	</p>
+	<p>
 		<%= f.number_field :target_pledge_amount %>
 	</p>
 
 	<p>
-		<%= f.label :website %>:
+		<%= f.label :website %>
+	</p>
+	<p>
 		<%= f.text_field :website %>
 	</p>
 
 	<p>
-		<%= f.label :pledging_ends_on %>:
+		<%= f.label :pledging_ends_on %>
+	</p>
+	<p>
 		<%= f.date_field :pledging_ends_on %>
 	</p>
 
